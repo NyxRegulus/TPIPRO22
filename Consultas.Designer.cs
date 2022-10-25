@@ -41,16 +41,16 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbConsulta1 = new System.Windows.Forms.Label();
+            this.lbConsulta2 = new System.Windows.Forms.Label();
+            this.lbConsulta3 = new System.Windows.Forms.Label();
+            this.lbConsulta4 = new System.Windows.Forms.Label();
+            this.lbConsulta5 = new System.Windows.Forms.Label();
+            this.lbConsulta6 = new System.Windows.Forms.Label();
+            this.lbConsulta7 = new System.Windows.Forms.Label();
+            this.lbConsulta8 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbConsulta9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +90,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Volver al Menu";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -109,6 +110,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Consulta 2";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -118,6 +120,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "Consulta 3";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -127,6 +130,7 @@
             this.button7.TabIndex = 7;
             this.button7.Text = "Consulta 4";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -136,6 +140,7 @@
             this.button8.TabIndex = 8;
             this.button8.Text = "Consulta 5";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -145,6 +150,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "Consulta 6";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -154,6 +160,7 @@
             this.button10.TabIndex = 10;
             this.button10.Text = "Consulta 7";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -163,6 +170,7 @@
             this.button11.TabIndex = 11;
             this.button11.Text = "Consulta 8";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label1
             // 
@@ -172,86 +180,94 @@
             this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 12;
             // 
-            // label2
+            // lbConsulta1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(687, 15);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Se quiere saber la cantidad de automoviles vendidos en el año pasado junto con el" +
-    " precio y su promedio, que sean modelo Sedan";
+            this.lbConsulta1.AutoSize = true;
+            this.lbConsulta1.Location = new System.Drawing.Point(93, 53);
+            this.lbConsulta1.Name = "lbConsulta1";
+            this.lbConsulta1.Size = new System.Drawing.Size(667, 15);
+            this.lbConsulta1.TabIndex = 13;
+            this.lbConsulta1.Text = "Se quiere saber la cantidad de automoviles vendidos en el año pasado junto con el" +
+    " precio y su promedio, que sean tipo Sedan";
+            this.lbConsulta1.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lbConsulta2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(728, 15);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Se desea saber el promedio de ventas realizadas de los meses del año pasados, que" +
+            this.lbConsulta2.AutoSize = true;
+            this.lbConsulta2.Location = new System.Drawing.Point(93, 82);
+            this.lbConsulta2.Name = "lbConsulta2";
+            this.lbConsulta2.Size = new System.Drawing.Size(728, 15);
+            this.lbConsulta2.TabIndex = 14;
+            this.lbConsulta2.Text = "Se desea saber el promedio de ventas realizadas de los meses del año pasados, que" +
     " sean superior al promedio de ventas del mes corriente";
+            this.lbConsulta2.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // lbConsulta3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(93, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(463, 15);
-            this.label4.TabIndex = 15;
-            this.label4.Text = " Emitir un reporte de la cantidad de ventas realizada por tipo de cliente en el a" +
+            this.lbConsulta3.AutoSize = true;
+            this.lbConsulta3.Location = new System.Drawing.Point(93, 111);
+            this.lbConsulta3.Name = "lbConsulta3";
+            this.lbConsulta3.Size = new System.Drawing.Size(463, 15);
+            this.lbConsulta3.TabIndex = 15;
+            this.lbConsulta3.Text = " Emitir un reporte de la cantidad de ventas realizada por tipo de cliente en el a" +
     "ño actual";
+            this.lbConsulta3.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lbConsulta4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(93, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(793, 30);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Se desea obtener un listado de los clientes que hayan adquirido un autoplan en lo" +
+            this.lbConsulta4.AutoSize = true;
+            this.lbConsulta4.Location = new System.Drawing.Point(93, 136);
+            this.lbConsulta4.Name = "lbConsulta4";
+            this.lbConsulta4.Size = new System.Drawing.Size(793, 30);
+            this.lbConsulta4.TabIndex = 16;
+            this.lbConsulta4.Text = "Se desea obtener un listado de los clientes que hayan adquirido un autoplan en lo" +
     "s ultimos 3 meses, con al menos una opcion de contacto conocida, \r\ny cuya cuota " +
     "sea superior a 20000";
+            this.lbConsulta4.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label6
+            // lbConsulta5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(93, 169);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(601, 15);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Listar las ventaS con sus respectivos empleados en el año actual las cuales super" +
+            this.lbConsulta5.AutoSize = true;
+            this.lbConsulta5.Location = new System.Drawing.Point(93, 169);
+            this.lbConsulta5.Name = "lbConsulta5";
+            this.lbConsulta5.Size = new System.Drawing.Size(601, 15);
+            this.lbConsulta5.TabIndex = 17;
+            this.lbConsulta5.Text = "Listar las ventaS con sus respectivos empleados en el año actual las cuales super" +
     "aron el promedio del año pasado";
+            this.lbConsulta5.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
+            // lbConsulta6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(93, 194);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(598, 30);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Emitir un listado de los vehiculos que NO fueron vendidos este año. En ese listad" +
+            this.lbConsulta6.AutoSize = true;
+            this.lbConsulta6.Location = new System.Drawing.Point(93, 194);
+            this.lbConsulta6.Name = "lbConsulta6";
+            this.lbConsulta6.Size = new System.Drawing.Size(598, 30);
+            this.lbConsulta6.TabIndex = 18;
+            this.lbConsulta6.Text = "Emitir un listado de los vehiculos que NO fueron vendidos este año. En ese listad" +
     "o solo incluir aquellos vehículos\r\ncuyo precio este entre 1.000.000 y 1.500.000";
+            this.lbConsulta6.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
+            // lbConsulta7
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(93, 231);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(737, 15);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Emitir un listado en el que se comparten mensualmente el total de autos vendidos " +
+            this.lbConsulta7.AutoSize = true;
+            this.lbConsulta7.Location = new System.Drawing.Point(93, 231);
+            this.lbConsulta7.Name = "lbConsulta7";
+            this.lbConsulta7.Size = new System.Drawing.Size(737, 15);
+            this.lbConsulta7.TabIndex = 19;
+            this.lbConsulta7.Text = "Emitir un listado en el que se comparten mensualmente el total de autos vendidos " +
     "y total facturado en cada autoplan en el año 2022 y 2021";
+            this.lbConsulta7.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label9
+            // lbConsulta8
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(93, 256);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(452, 15);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Emitir un reporte de la cantidad de ventas del año pasado segun el tipo del vehic" +
+            this.lbConsulta8.AutoSize = true;
+            this.lbConsulta8.Location = new System.Drawing.Point(93, 256);
+            this.lbConsulta8.Name = "lbConsulta8";
+            this.lbConsulta8.Size = new System.Drawing.Size(452, 15);
+            this.lbConsulta8.TabIndex = 20;
+            this.lbConsulta8.Text = "Emitir un reporte de la cantidad de ventas del año pasado segun el tipo del vehic" +
     "ulos";
+            this.lbConsulta8.Click += new System.EventHandler(this.label9_Click);
             // 
             // button12
             // 
@@ -261,31 +277,34 @@
             this.button12.TabIndex = 21;
             this.button12.Text = "Consulta 9";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // label10
+            // lbConsulta9
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(93, 285);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(226, 15);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "                                                                         ";
+            this.lbConsulta9.AutoSize = true;
+            this.lbConsulta9.Location = new System.Drawing.Point(93, 285);
+            this.lbConsulta9.Name = "lbConsulta9";
+            this.lbConsulta9.Size = new System.Drawing.Size(596, 15);
+            this.lbConsulta9.TabIndex = 22;
+            this.lbConsulta9.Text = "Emitir un reporte de las 5 autopartes mas vendidas de cierto año, cuyo precio est" +
+    "e por encima de cierto numero.";
+            this.lbConsulta9.Click += new System.EventHandler(this.label10_Click);
             // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1048, 580);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbConsulta9);
             this.Controls.Add(this.button12);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbConsulta8);
+            this.Controls.Add(this.lbConsulta7);
+            this.Controls.Add(this.lbConsulta6);
+            this.Controls.Add(this.lbConsulta5);
+            this.Controls.Add(this.lbConsulta4);
+            this.Controls.Add(this.lbConsulta3);
+            this.Controls.Add(this.lbConsulta2);
+            this.Controls.Add(this.lbConsulta1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -322,7 +341,7 @@
         private Button button10;
         private Button button11;
         private Label label1;
-        private Label label2;
+        private Label lbConsulta1;
         private Label label3;
         private Label label4;
         private Label label5;
@@ -332,5 +351,13 @@
         private Label label9;
         private Button button12;
         private Label label10;
+        private Label lbConsulta2;
+        private Label lbConsulta3;
+        private Label lbConsulta4;
+        private Label lbConsulta5;
+        private Label lbConsulta6;
+        private Label lbConsulta7;
+        private Label lbConsulta8;
+        private Label lbConsulta9;
     }
 }

@@ -36,5 +36,12 @@ namespace Login
         {
 
         }
+
+        private void toolStripTextBox7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Consultas consultas = new Consultas();
+            consultas.Show();
+        }
     }
 }

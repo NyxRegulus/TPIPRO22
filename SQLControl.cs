@@ -11,7 +11,28 @@ namespace Login
 {
     class SQLControl
     {
-        private SqlConnection cnn = new SqlConnection(@"Data Source=DESKTOP-DIVRQKS\SERVIDORSQL;Initial Catalog=VIVERO_FENIX;Integrated Security=True");
+        private string conexionString;
+        private SqlConnection cnn;
+        private SqlCommand cmd;
+        private DataTable table;
+
+        public SQLControl()
+        {
+            conexionString = @"Data Source=DESKTOP-DIVRQKS\SERVIDORSQL;Initial Catalog=VIVERO_FENIX;Integrated Security=True";
+            cnn = new SqlConnection(conexionString);
+        }
+        public DataTable ConsultarSQL(string query) 
+        {
+            cnn.Open();
+            cmd = new SqlCommand();
+            cmd.CommandText = query;
+            cmd.Connection = cnn;
+            table = new DataTable();
+            table.Load(cmd.ExecuteReader());
+            cnn.Close();
+            return table;
+        }
+        
 
         public int Login (string usario, string pass) 
         {

@@ -108,6 +108,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -136,6 +137,8 @@
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lbContra);
             this.Controls.Add(this.lbUsario);
+            this.MaximumSize = new System.Drawing.Size(260, 239);
+            this.MinimumSize = new System.Drawing.Size(260, 239);
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);

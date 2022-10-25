@@ -57,12 +57,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripTextBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
   <data name="toolStripTextBox7.Text" xml:space="preserve">
     <value>Consultar</value>
+  </data>
+  <data name="toolStripTextBox1.Text" xml:space="preserve">
+    <value>Cambiar Cuenta</value>
+  </data>
+  <data name="toolStripTextBox5.Text" xml:space="preserve">
+    <value>Cerrar Cuenta</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="usuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="usuarioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>777, 24</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1722,5 +1734,14 @@
         0Alqvn9JJT9ADzT6L5+SSS/QJ4MansOJPx9yzxH2xn7SJNh1xgR+rA/u0kn35P8ALyvTs/0Na8OSSOyn
         6BMzrM95SXz8kkp+gUy+f0kFP0Alovn9JJT9AptV8/pJKfoFJfPySSn6B0SC+fkkVP0EkF8+pJKf/9k=
 </value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>777, 450</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>793, 489</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>793, 489</value>
   </data>
 </root>
