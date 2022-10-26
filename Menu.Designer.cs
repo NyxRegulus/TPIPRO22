@@ -37,11 +37,11 @@
             this.toolStripTextBox4 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBox7 = new System.Windows.Forms.ToolStripTextBox();
-            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox5 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox6 = new System.Windows.Forms.ToolStripTextBox();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox5 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox8 = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,8 +58,7 @@
             resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
             this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator2,
-            this.toolStripMenuItem5,
-            this.usuarioToolStripMenuItem});
+            this.toolStripMenuItem5});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -100,29 +99,12 @@
             this.toolStripTextBox7.Name = "toolStripTextBox7";
             this.toolStripTextBox7.Click += new System.EventHandler(this.toolStripTextBox7_Click);
             // 
-            // usuarioToolStripMenuItem
-            // 
-            resources.ApplyResources(this.usuarioToolStripMenuItem, "usuarioToolStripMenuItem");
-            this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox1,
-            this.toolStripTextBox5});
-            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            // 
-            // toolStripTextBox1
-            // 
-            resources.ApplyResources(this.toolStripTextBox1, "toolStripTextBox1");
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            // 
-            // toolStripTextBox5
-            // 
-            resources.ApplyResources(this.toolStripTextBox5, "toolStripTextBox5");
-            this.toolStripTextBox5.Name = "toolStripTextBox5";
-            // 
             // toolStripMenuItem4
             // 
             resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
             this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox6});
+            this.toolStripTextBox6,
+            this.usuarioToolStripMenuItem});
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
@@ -130,6 +112,24 @@
             // 
             resources.ApplyResources(this.toolStripTextBox6, "toolStripTextBox6");
             this.toolStripTextBox6.Name = "toolStripTextBox6";
+            // 
+            // usuarioToolStripMenuItem
+            // 
+            resources.ApplyResources(this.usuarioToolStripMenuItem, "usuarioToolStripMenuItem");
+            this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox5,
+            this.toolStripTextBox8});
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            // 
+            // toolStripTextBox5
+            // 
+            resources.ApplyResources(this.toolStripTextBox5, "toolStripTextBox5");
+            this.toolStripTextBox5.Name = "toolStripTextBox5";
+            // 
+            // toolStripTextBox8
+            // 
+            resources.ApplyResources(this.toolStripTextBox8, "toolStripTextBox8");
+            this.toolStripTextBox8.Name = "toolStripTextBox8";
             // 
             // Menu
             // 
@@ -160,5 +160,6 @@
         private ToolStripMenuItem usuarioToolStripMenuItem;
         private ToolStripTextBox toolStripTextBox1;
         private ToolStripTextBox toolStripTextBox5;
+        private ToolStripTextBox toolStripTextBox8;
     }
 }

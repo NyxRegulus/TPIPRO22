@@ -57,18 +57,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 6</value>
+  </data>
   <data name="toolStripTextBox7.Text" xml:space="preserve">
     <value>Consultar</value>
   </data>
-  <data name="toolStripTextBox1.Text" xml:space="preserve">
-    <value>Cambiar Cuenta</value>
+  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="toolStripTextBox5.Text" xml:space="preserve">
-    <value>Cerrar Cuenta</value>
+    <value>Cambiar Cuenta</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="usuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
+  <data name="toolStripTextBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="toolStripTextBox8.Text" xml:space="preserve">
+    <value>Cerrar Cuenta</value>
   </data>
   <data name="usuarioToolStripMenuItem.Text" xml:space="preserve">
     <value>Usuario</value>
@@ -1739,9 +1745,6 @@
     <value>777, 450</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>793, 489</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>793, 489</value>
   </data>
 </root>

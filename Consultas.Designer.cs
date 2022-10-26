@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvConsulta = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -51,17 +51,17 @@
             this.lbConsulta8 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.lbConsulta9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvConsulta
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 342);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1024, 226);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsulta.Location = new System.Drawing.Point(12, 342);
+            this.dgvConsulta.Name = "dgvConsulta";
+            this.dgvConsulta.RowTemplate.Height = 25;
+            this.dgvConsulta.Size = new System.Drawing.Size(1024, 226);
+            this.dgvConsulta.TabIndex = 0;
             // 
             // button1
             // 
@@ -317,10 +317,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvConsulta);
             this.Name = "Consultas";
             this.Text = "Consultas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,7 +328,7 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvConsulta;
         private Button button1;
         private Button button2;
         private Button button3;

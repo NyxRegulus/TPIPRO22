@@ -12,9 +12,13 @@ namespace Login
 {
     public partial class Consultas : Form
     {
+        private SQLControl oConexion;
+    
         public Consultas()
         {
             InitializeComponent();
+            oConexion= new SQLControl();
+            
             Habilitar(true);
         }
         public void Habilitar(bool v)
@@ -121,6 +125,9 @@ namespace Login
         {
             Limpiar();
             lbConsulta3.Show();
+            oConexion = new SQLControl();
+            DataTable tabla = oConexion.ConsultarSQL("aca va la consulta");
+            dgvConsulta.DataSource = tabla;
         }
 
         private void button7_Click(object sender, EventArgs e)
