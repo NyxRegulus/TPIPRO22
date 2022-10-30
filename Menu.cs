@@ -43,5 +43,12 @@ namespace Login
             Consultas consultas = new Consultas();
             consultas.Show();
         }
+
+        
+
+        private void toolStripTextBox9_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

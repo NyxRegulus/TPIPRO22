@@ -18,7 +18,7 @@ namespace Login
 
         public SQLControl()
         {
-            conexionString = @"Data Source=DESKTOP-DIVRQKS\SERVIDORSQL;Initial Catalog=VIVERO_FENIX;Integrated Security=True";
+            conexionString = @"Data Source=DESKTOP-DIVRQKS\SERVIDORSQL;Initial Catalog=Automotriz;Integrated Security=True";
             cnn = new SqlConnection(conexionString);
         }
         public DataTable ConsultarSQL(string query) 

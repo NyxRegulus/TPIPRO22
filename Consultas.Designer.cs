@@ -51,6 +51,8 @@
             this.lbConsulta8 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.lbConsulta9 = new System.Windows.Forms.Label();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.btnOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,9 +60,11 @@
             // 
             this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta.Location = new System.Drawing.Point(12, 342);
+            this.dgvConsulta.MaximumSize = new System.Drawing.Size(1024, 360);
+            this.dgvConsulta.MinimumSize = new System.Drawing.Size(1024, 360);
             this.dgvConsulta.Name = "dgvConsulta";
             this.dgvConsulta.RowTemplate.Height = 25;
-            this.dgvConsulta.Size = new System.Drawing.Size(1024, 226);
+            this.dgvConsulta.Size = new System.Drawing.Size(1024, 360);
             this.dgvConsulta.TabIndex = 0;
             // 
             // button1
@@ -81,6 +85,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Imprimir Consulta";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -196,10 +201,11 @@
             this.lbConsulta2.AutoSize = true;
             this.lbConsulta2.Location = new System.Drawing.Point(93, 82);
             this.lbConsulta2.Name = "lbConsulta2";
-            this.lbConsulta2.Size = new System.Drawing.Size(728, 15);
+            this.lbConsulta2.Size = new System.Drawing.Size(555, 30);
             this.lbConsulta2.TabIndex = 14;
-            this.lbConsulta2.Text = "Se desea saber el promedio de ventas realizadas de los meses del año pasados, que" +
-    " sean superior al promedio de ventas del mes corriente";
+            this.lbConsulta2.Text = "Se desea saber,¿Cuanto es el importe total de las ventas que han realizado y su p" +
+    "rimera venta,\r\nde los vendedores que su apellido empiezes con r a z que han supe" +
+    "rado el importe del promedio general";
             this.lbConsulta2.Click += new System.EventHandler(this.label3_Click);
             // 
             // lbConsulta3
@@ -230,9 +236,9 @@
             this.lbConsulta5.AutoSize = true;
             this.lbConsulta5.Location = new System.Drawing.Point(93, 169);
             this.lbConsulta5.Name = "lbConsulta5";
-            this.lbConsulta5.Size = new System.Drawing.Size(601, 15);
+            this.lbConsulta5.Size = new System.Drawing.Size(600, 15);
             this.lbConsulta5.TabIndex = 17;
-            this.lbConsulta5.Text = "Listar las ventaS con sus respectivos empleados en el año actual las cuales super" +
+            this.lbConsulta5.Text = "Listar las ventas con sus respectivos empleados en el año actual las cuales super" +
     "aron el promedio del año pasado";
             this.lbConsulta5.Click += new System.EventHandler(this.label6_Click);
             // 
@@ -272,6 +278,8 @@
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(12, 281);
+            this.button12.MaximumSize = new System.Drawing.Size(75, 23);
+            this.button12.MinimumSize = new System.Drawing.Size(75, 23);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 21;
@@ -284,17 +292,39 @@
             this.lbConsulta9.AutoSize = true;
             this.lbConsulta9.Location = new System.Drawing.Point(93, 285);
             this.lbConsulta9.Name = "lbConsulta9";
-            this.lbConsulta9.Size = new System.Drawing.Size(596, 15);
+            this.lbConsulta9.Size = new System.Drawing.Size(709, 15);
             this.lbConsulta9.TabIndex = 22;
             this.lbConsulta9.Text = "Emitir un reporte de las 5 autopartes mas vendidas de cierto año, cuyo precio est" +
-    "e por encima de cierto numero.";
+    "e por encima de cierto numero. Pasar por Parametro:";
             this.lbConsulta9.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.Location = new System.Drawing.Point(808, 281);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(78, 23);
+            this.txtFecha.TabIndex = 23;
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
+            // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(892, 281);
+            this.btnOk.MaximumSize = new System.Drawing.Size(75, 23);
+            this.btnOk.MinimumSize = new System.Drawing.Size(75, 23);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.TabIndex = 24;
+            this.btnOk.Text = "ok";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 580);
+            this.ClientSize = new System.Drawing.Size(1048, 714);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.lbConsulta9);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.lbConsulta8);
@@ -318,7 +348,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvConsulta);
+            this.MaximumSize = new System.Drawing.Size(1064, 753);
+            this.MinimumSize = new System.Drawing.Size(1064, 753);
             this.Name = "Consultas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Consultas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
@@ -359,5 +392,7 @@
         private Label lbConsulta7;
         private Label lbConsulta8;
         private Label lbConsulta9;
+        private TextBox txtFecha;
+        private Button btnOk;
     }
 }

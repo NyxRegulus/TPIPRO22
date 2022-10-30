@@ -42,6 +42,7 @@
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox5 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBox8 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox9 = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
+            this.toolStripMenuItem4,
+            this.toolStripTextBox9});
             this.menuStrip1.Name = "menuStrip1";
             // 
             // toolStripMenuItem3
@@ -131,6 +133,12 @@
             resources.ApplyResources(this.toolStripTextBox8, "toolStripTextBox8");
             this.toolStripTextBox8.Name = "toolStripTextBox8";
             // 
+            // toolStripTextBox9
+            // 
+            resources.ApplyResources(this.toolStripTextBox9, "toolStripTextBox9");
+            this.toolStripTextBox9.Name = "toolStripTextBox9";
+            this.toolStripTextBox9.Click += new System.EventHandler(this.toolStripTextBox9_Click_1);
+            // 
             // Menu
             // 
             resources.ApplyResources(this, "$this");
@@ -161,5 +169,6 @@
         private ToolStripTextBox toolStripTextBox1;
         private ToolStripTextBox toolStripTextBox5;
         private ToolStripTextBox toolStripTextBox8;
+        private ToolStripTextBox toolStripTextBox9;
     }
 }
